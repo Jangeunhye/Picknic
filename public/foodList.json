@@ -1,0 +1,845 @@
+[
+  {
+    "title": "라멘",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": false
+  },
+  {
+    "title": "떡볶이",
+    "spicy": true,
+    "oily": false,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "샤브샤브",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": false
+  },
+  {
+    "title": "비빔밥",
+    "spicy": false,
+    "oily": false,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "김치찌개",
+    "spicy": true,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "된장찌개",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "갈비탕",
+    "spicy": false,
+    "oily": true,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "짜장면",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "마파두부",
+    "spicy": true,
+    "oily": true,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "양장피",
+    "spicy": false,
+    "oily": false,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "초밥",
+    "spicy": false,
+    "oily": false,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "우동",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": false
+  },
+  {
+    "title": "카츠동",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "크림파스타",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "토마토파스타",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "로제파스타",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "피자",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "샐러드",
+    "spicy": false,
+    "oily": false,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "샌드위치",
+    "spicy": false,
+    "oily": false,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "타코",
+    "spicy": false,
+    "oily": false,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "쌀국수",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": false
+  },
+  {
+    "title": "닭볶음탕",
+    "spicy": true,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "김치볶음밥",
+    "spicy": true,
+    "oily": false,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "불고기",
+    "spicy": false,
+    "oily": false,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "물냉면",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": false
+  },
+  {
+    "title": "비빔냉면",
+    "spicy": true,
+    "oily": false,
+    "soup": true,
+    "rice": false
+  },
+  {
+    "title": "돼지불백",
+    "spicy": true,
+    "oily": true,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "덴푸라",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "갈비찜",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "미역국",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "떡국",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": false
+  },
+  {
+    "title": "햄버거",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "김밥",
+    "spicy": false,
+    "oily": false,
+    "soup": false,
+    "rice": true
+  },
+  { "title": "죽", "spicy": false, "oily": false, "soup": true, "rice": false },
+  {
+    "title": "감자탕",
+    "spicy": true,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "삼계탕",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "닭갈비",
+    "spicy": true,
+    "oily": true,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "두부김치",
+    "spicy": true,
+    "oily": false,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "콩나물국밥",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "치킨",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "소고기국밥",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "알밥",
+    "spicy": false,
+    "oily": false,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "제육볶음",
+    "spicy": true,
+    "oily": true,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "라면",
+    "spicy": true,
+    "oily": true,
+    "soup": true,
+    "rice": false
+  },
+  {
+    "title": "곱창",
+    "spicy": true,
+    "oily": true,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "곱창전골",
+    "spicy": true,
+    "oily": true,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "보쌈",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "칼국수",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": false
+  },
+  {
+    "title": "떡갈비",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "부대찌개",
+    "spicy": true,
+    "oily": true,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "떡만두국",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": false
+  },
+  { "title": "짬뽕", "spicy": true, "oily": true, "soup": true, "rice": false },
+  {
+    "title": "돈까스",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "김치찜",
+    "spicy": true,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "비지찌개",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "백반",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "쇠고기무국",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "연어덮밥",
+    "spicy": false,
+    "oily": false,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "팟타이",
+    "spicy": false,
+    "oily": false,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "커리",
+    "spicy": false,
+    "oily": false,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "쌈밥",
+    "spicy": false,
+    "oily": false,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "찜닭",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "라볶이",
+    "spicy": true,
+    "oily": false,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "쌀국수",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": false
+  },
+  {
+    "title": "나시고랭",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "콩국수",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": false
+  },
+  {
+    "title": "포케",
+    "spicy": false,
+    "oily": false,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "팔보채",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "탕수육",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "도시락",
+    "spicy": false,
+    "oily": false,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "함박스테이크",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "수제비",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": false
+  },
+  {
+    "title": "삼겹살",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "육개장",
+    "spicy": true,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "월남쌈",
+    "spicy": false,
+    "oily": false,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "낙지볶음",
+    "spicy": true,
+    "oily": false,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "순두부찌개",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "청국장",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "고추장찌개",
+    "spicy": true,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "오므라이스",
+    "spicy": false,
+    "oily": false,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "치킨마요덮밥",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "돈부리",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "순대국밥",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "북엇국",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "뼈해장국",
+    "spicy": true,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "해장국",
+    "spicy": true,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "우거지국밥",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "잔치국수",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": false
+  },
+  {
+    "title": "깐풍기",
+    "spicy": true,
+    "oily": true,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "토스트",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": false
+  },
+
+  {
+    "title": "소고기무국",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "파인애플볶음밥",
+    "spicy": false,
+    "oily": false,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "밀푀유나베",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": false
+  },
+  {
+    "title": "감바스",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "오징어볶음",
+    "spicy": true,
+    "oily": false,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "소바",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": false
+  },
+  {
+    "title": "족발",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "홍탕",
+    "spicy": true,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "불고기전골",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "해물찜",
+    "spicy": true,
+    "oily": false,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "마라탕",
+    "spicy": true,
+    "oily": true,
+    "soup": true,
+    "rice": false
+  },
+  {
+    "title": "마라샹궈",
+    "spicy": true,
+    "oily": true,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "육회비빔밥",
+    "spicy": false,
+    "oily": false,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "콩나물불고기",
+    "spicy": true,
+    "oily": true,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "갈치조림",
+    "spicy": true,
+    "oily": false,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "연어 아보카도 덮밥",
+    "spicy": false,
+    "oily": false,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "떡튀순",
+    "spicy": true,
+    "oily": true,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "쭈꾸미볶음",
+    "spicy": true,
+    "oily": false,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "닭강정",
+    "spicy": true,
+    "oily": true,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "차돌박이",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "군만두",
+    "spicy": false,
+    "oily": true,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "반미",
+    "spicy": false,
+    "oily": false,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "서브웨이",
+    "spicy": false,
+    "oily": false,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "분짜",
+    "spicy": false,
+    "oily": false,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "칠리새우",
+    "spicy": true,
+    "oily": true,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "우육면",
+    "spicy": false,
+    "oily": true,
+    "soup": true,
+    "rice": false
+  },
+  {
+    "title": "곰탕",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "설렁탕",
+    "spicy": false,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  },
+  {
+    "title": "간장게장",
+    "spicy": false,
+    "oily": false,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "양념게장",
+    "spicy": true,
+    "oily": false,
+    "soup": false,
+    "rice": true
+  },
+  {
+    "title": "딤섬",
+    "spicy": false,
+    "oily": false,
+    "soup": false,
+    "rice": false
+  },
+  {
+    "title": "알탕",
+    "spicy": true,
+    "oily": false,
+    "soup": true,
+    "rice": true
+  }
+]
