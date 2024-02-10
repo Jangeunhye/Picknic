@@ -6,3 +6,11 @@ export type Option = {
     thirdInput: string;
   };
 };
+
+export type Food = {
+  title: string;
+  spicy: boolean;
+  oily: boolean;
+  soup: boolean;
+  rice: boolean;
+};

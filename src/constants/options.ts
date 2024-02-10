@@ -12,24 +12,24 @@ export const spicyOption: Option = {
 export const oilyOption: Option = {
   title: "oily",
   labels: {
-    firstInput: "기름진",
+    firstInput: "담백한",
     secondInput: "상관없음",
-    thirdInput: "담백한",
+    thirdInput: "기름진",
   },
 };
 export const soupOption: Option = {
   title: "soup",
   labels: {
-    firstInput: "국물",
+    firstInput: "국물없는",
     secondInput: "상관없음",
-    thirdInput: "국물없는",
+    thirdInput: "국물",
   },
 };
 export const riceOption: Option = {
   title: "rice",
   labels: {
-    firstInput: "밥",
+    firstInput: "밥이 아닌",
     secondInput: "상관없음",
-    thirdInput: "밥이 아닌",
+    thirdInput: "밥",
   },
 };

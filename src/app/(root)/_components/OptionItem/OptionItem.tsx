@@ -26,6 +26,7 @@ function OptionItem({
         id={`${title}-${inputValue}`}
         name={title}
         onClick={handleClick}
+        required
       />
       <label htmlFor={inputValue}>{inputValue}</label>
     </div>

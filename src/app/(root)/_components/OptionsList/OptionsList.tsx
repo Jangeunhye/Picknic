@@ -5,14 +5,11 @@ import {
   soupOption,
   spicyOption,
 } from "@/constants/options";
-import { useOption } from "@/contexts/option.context";
 import { useRouter } from "next/navigation";
 import { FormEventHandler } from "react";
 import OptionGroup from "../OptionGroup";
 
 function OptionsList() {
-  const userOption = useOption();
-
   const router = useRouter();
   const handleSubmit: FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
