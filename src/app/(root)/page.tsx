@@ -1,11 +1,14 @@
 import Page from "@/components/Page/Page";
+import HomeHeader from "./_components/HomeHeader";
 import OptionsList from "./_components/OptionsList";
 
 export default function Home() {
   return (
     <Page>
-      <h1>취향을 선택하세요</h1>
-      <OptionsList />
+      <div className="flex flex-col items-center pt-12 ">
+        <HomeHeader />
+        <OptionsList />
+      </div>
     </Page>
   );
 }

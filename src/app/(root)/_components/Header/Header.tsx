@@ -1,23 +1,22 @@
-import { Black_Han_Sans, Noto_Sans } from "next/font/google";
+import { Noto_Sans } from "next/font/google";
 import Link from "next/link";
 
-const blackHanSans = Black_Han_Sans({
-  weight: ["400"],
-  subsets: ["latin"],
-});
 const notoSans = Noto_Sans({
-  weight: ["300"],
+  weight: ["500"],
   subsets: ["latin"],
 });
 
 function Header() {
   return (
-    <header className="flex items-center px-5 py-4 gap-3 border-b h-20 shadow-sm drop-shadow-sm">
-      <Link href="/" className={`text-[45px] ${blackHanSans.className}`}>
-        Picknic
+    <header className="flex items-center justify-between px-14 h-20 bg-[#ffcd22]">
+      <Link
+        href="/"
+        className={` text-4xl font-bold text-white px-3 rounded-3xl `}
+      >
+        투잇
       </Link>
-      <p className={`text-[21px]  ${notoSans.className}`}>
-        모두를 위한 음식 메뉴
+      <p className={`text-2xl ${notoSans.className} text-[#aace38]`}>
+        <span className="text-white"> TODAY EAT</span>
       </p>
     </header>
   );

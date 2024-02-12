@@ -3,4 +3,57 @@
 @tailwind utilities;
 
 @layer utilities {
+  .gradient-background-odd {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(#fff, #fff),
+      linear-gradient(to right, #fccf21 0%, #6ddb78 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+
+  .gradient-background-even {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(#fff, #fff),
+      linear-gradient(to right, #6ddb78 0%, #fccf21 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+}
+
+@layer components {
+  .custom-radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+  }
+  .custom-radio:checked {
+    background-color: #6ddb78;
+    border: 10px solid white;
+    box-shadow: 0 0 0 1.6px #cccccc;
+  }
+
+  .gradient-background-image {
+    border: 7px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(#fff, #fff),
+      linear-gradient(to right, #fccf21 0%, #6ddb78 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }

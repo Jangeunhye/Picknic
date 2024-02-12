@@ -15,8 +15,14 @@ export default function HTMLLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="w-[100%] h-[100%]">
+      <body className={`${inter.className} w-[100%] h-[100%]`}>
+        {/* <Script
+          strategy="beforeInteractive"
+          src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_API_KEY}&libraries=services&autoload=false`}
+        /> */}
+        {children}
+      </body>
     </html>
   );
 }

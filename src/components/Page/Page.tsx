@@ -1,5 +1,5 @@
 function Page({ children }: { children: React.ReactNode }) {
-  return <main className="px-6 py-8">{children}</main>;
+  return <main className=" w-[100%] h-[100vh]">{children}</main>;
 }
 
 export default Page;
