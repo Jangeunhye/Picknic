@@ -15,7 +15,9 @@ function ResultPage() {
 
   useEffect(() => {
     const getFoodList = async () => {
-      const response = await fetch(`/data/foodList.json`);
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_URL}/data/foodList.json`
+      );
       const foodList = await response.json();
       const selectedOptions = userOptions.userOption;
       const filteredFoods = getFilteredFoods(foodList, selectedOptions);
