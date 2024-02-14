@@ -2,6 +2,7 @@
 import Map from "@/components/Map";
 import Page from "@/components/Page/Page";
 import { useOption } from "@/contexts/option.context";
+import { Food } from "@/types/Option.type";
 import { getFilteredFoods } from "@/utils/getFilterFoods";
 import { useEffect, useState } from "react";
 import ResultButtons from "../_components/ResultButtons";
@@ -12,6 +13,7 @@ function ResultPage() {
   const [food, setFood] = useState<string>();
   const userOptions = useOption();
   const [reLoad, setReLoad] = useState(false);
+  const [foodList, setFoodList] = useState<Food[]>([]);
 
   useEffect(() => {
     const getFoodList = async () => {
@@ -19,20 +21,23 @@ function ResultPage() {
         `${process.env.NEXT_PUBLIC_URL}/data/foodList.json`
       );
       const foodList = await response.json();
-      const selectedOptions = userOptions.userOption;
-      const filteredFoods = getFilteredFoods(foodList, selectedOptions);
-
-      const filterFood =
-        filteredFoods.length > 0
-          ? filteredFoods[Math.floor(Math.random() * filteredFoods.length)]
-              .title
-          : "";
-      console.log(filteredFoods);
-      setFood(filterFood);
+      setFoodList(foodList);
     };
-    setIsMapVisible(false);
     getFoodList();
-  }, [reLoad]);
+  }, []);
+
+  useEffect(() => {
+    const selectedOptions = userOptions.userOption;
+    const filteredFoods = getFilteredFoods(foodList, selectedOptions);
+
+    const filterFood =
+      filteredFoods.length > 0
+        ? filteredFoods[Math.floor(Math.random() * filteredFoods.length)].title
+        : "";
+    setFood(filterFood);
+
+    setIsMapVisible(false);
+  }, [reLoad, foodList]);
 
   return (
     <Page>
