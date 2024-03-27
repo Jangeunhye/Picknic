@@ -1,5 +1,5 @@
 "use client";
-import Map from "@/components/Map";
+import KakaoMap from "@/components/KakaoMap";
 import Page from "@/components/Page/Page";
 import { useOption } from "@/contexts/option.context";
 import { Food } from "@/types/Option.type";
@@ -8,12 +8,18 @@ import { useEffect, useState } from "react";
 import ResultButtons from "../_components/ResultButtons";
 import ResultFood from "../_components/ResultFood";
 
+const getCurrentCoordinate = () => {
+  return new Promise((resolve, reject) => {
+    navigator.geolocation.getCurrentPosition(resolve, reject);
+  });
+};
 function ResultPage() {
   const [isMapVisible, setIsMapVisible] = useState(false);
   const [food, setFood] = useState<string>();
   const userOptions = useOption();
   const [reLoad, setReLoad] = useState(false);
   const [foodList, setFoodList] = useState<Food[]>([]);
+  const [location, setLocation] = useState<any>();
 
   useEffect(() => {
     const getFoodList = async () => {
@@ -23,6 +29,21 @@ function ResultPage() {
       const foodList = await response.json();
       setFoodList(foodList);
     };
+    const getLocation = async () => {
+      try {
+        getCurrentCoordinate().then((position: any) => {
+          const lat = position.coords.latitude;
+          const lng = position.coords.longitude;
+          // 위치 정보를 객체로 반환합니다.
+          setLocation({ lat, lng });
+        });
+        // const coordinate = await getCurrentCoordinate();
+        // setLocation(coordinate);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    getLocation();
     getFoodList();
   }, []);
 
@@ -37,7 +58,7 @@ function ResultPage() {
     setFood(filterFood);
 
     setIsMapVisible(false);
-  }, [reLoad, foodList]);
+  }, [reLoad, foodList, userOptions.userOption]);
 
   return (
     <Page>
@@ -49,8 +70,10 @@ function ResultPage() {
             setIsMapVisible={setIsMapVisible}
             setReLoad={setReLoad}
           />
-          <div className="mt-24 mx-auto">
-            {isMapVisible ? <Map foodKeyword={food} /> : null}
+          <div className="mt-24 mx-auto pb-10">
+            {isMapVisible ? (
+              <KakaoMap keyword={food} location={location} />
+            ) : null}
           </div>
         </div>
       ) : null}
