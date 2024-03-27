@@ -14,6 +14,7 @@ function ResultButtons({
   const handleClick = () => {
     setIsMapVisible((current) => !current);
   };
+
   return (
     <div className="flex justify-center mt-20 gap-32">
       <Link

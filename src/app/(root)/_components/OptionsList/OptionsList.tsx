@@ -15,6 +15,7 @@ function OptionsList() {
     e.preventDefault();
     router.push("/result");
   };
+
   return (
     <section className="w-[100%] flex justify-center pt-24 bg-[url('/images/background.jpg')]">
       <form onSubmit={handleSubmit}>
