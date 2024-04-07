@@ -49,7 +49,7 @@ function ResultPage() {
   return (
     <Page>
       {food ? (
-        <div className=" w-[100%] min-h-[100vh] bg-[#f7f7f7] pt-12 mb-24">
+        <div className=" w-[100%] min-h-[100vh] bg-[#f7f7f7] pt-12 mb-24 px-3">
           <ResultFood finalFood={food} />
           <ResultButtons
             isMapVisible={isMapVisible}

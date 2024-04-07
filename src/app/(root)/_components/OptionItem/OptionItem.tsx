@@ -27,11 +27,11 @@ function OptionItem({
         name={title}
         onClick={handleClick}
         required
-        className={` w-[40px] checked:scale-75 mx-auto h-[40px] cursor-pointer custom-radio`}
+        className={`sm:w-[30px] sm:h-[30px] w-[40px] checked:scale-75 mx-auto h-[40px] cursor-pointer custom-radio`}
       />
       <label
         htmlFor={inputValue}
-        className={` text-[20px] text-center 
+        className={` text-[20px] sm: text-sm text-center 
           opacity-60
         `}
       >

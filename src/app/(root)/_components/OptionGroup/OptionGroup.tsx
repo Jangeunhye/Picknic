@@ -9,11 +9,11 @@ function OptionGroup({ option, type }: { option: Option; type: string }) {
 
   return (
     <div
-      className={`select-none w-[500px] mb-10 py-[2px] px-[2px] h-[140px] ${
+      className={`select-none sm:w-full sm:mx-auto w-[500px] mb-10 py-[2px] px-[2px] h-[140px] ${
         type === "even" ? "gradient-background-even" : "gradient-background-odd"
       }`}
     >
-      <div className="flex relative  w-[100%]  h-[100%] gap-24 justify-center items-center ">
+      <div className="flex relative w-full h-full gap-24 sm:gap-14 justify-center sm:justify-around items-center ">
         <OptionItem inputValue={firstInput} title={title} />
         <OptionItem inputValue={secondInput} title={title} />
         <OptionItem inputValue={thirdInput} title={title} />

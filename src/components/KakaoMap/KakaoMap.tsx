@@ -56,20 +56,19 @@ function KaKaoMap({ keyword, location }: { keyword: string; location: any }) {
   return (
     <div
       className={
-        "min-h-[600px] flex flex-col justify-center bg-white w-[900px] mx-auto items-center rounded-[50px] pb-6"
+        "min-h-[600px] flex flex-col justify-center sm:min-h-[400px] bg-white sm:w-full md:w-full w-[900px] mx-auto items-center rounded-[50px] sm:rounded-md pb-6"
       }
     >
       {location ? (
         <Map // 로드뷰를 표시할 Container
           center={location}
           style={{
-            minWidth: "800px",
-            minHeight: "600px",
             position: "relative",
             overflow: "hidden",
-            borderRadius: "10px",
           }}
-          className={"my-10"}
+          className={
+            "my-10 min-h-[600px] min-w-[800px] sm:min-w-full md:min-w-[90%] sm:min-h-[400px] sm:mt-0 sm:mb-12 rounded-[5px]"
+          }
           level={3}
           onCreate={setMap}
         >
@@ -98,15 +97,17 @@ function KaKaoMap({ keyword, location }: { keyword: string; location: any }) {
               >
                 <div
                   id="menu_wrap"
-                  className={`w-[800px] overflow-y-auto
+                  className={`w-[800px] sm:w-[95%] overflow-y-auto
                   bg-[#f7f7f7]
                   rounded-[10px]
                   mx-auto
                 p-5
             `}
                 >
-                  <h5 className="text-[20px]"> {marker.place_name}</h5>
-                  <div className="mb-[5px] mt-2">
+                  <h5 className="text-[20px] sm:text-base">
+                    {marker.place_name}
+                  </h5>
+                  <div className="mb-[5px] mt-2 sm:text-sm">
                     {marker.road_address_name}
                   </div>
                 </div>

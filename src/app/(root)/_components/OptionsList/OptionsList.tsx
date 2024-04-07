@@ -17,8 +17,8 @@ function OptionsList() {
   };
 
   return (
-    <section className="w-[100%] flex justify-center pt-24 bg-[url('/images/background.jpg')]">
-      <form onSubmit={handleSubmit}>
+    <section className="w-full flex justify-center pt-24 md:bg-[url('/images/background.jpg')] lg:bg-[url('/images/background.jpg')] bg-white">
+      <form onSubmit={handleSubmit} className="sm:w-[90%]">
         <ul className="flex flex-col">
           <li>
             <OptionGroup option={spicyOption} type="odd" />
