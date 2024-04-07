@@ -8,11 +8,6 @@ import { useEffect, useState } from "react";
 import ResultButtons from "../_components/ResultButtons";
 import ResultFood from "../_components/ResultFood";
 
-const getCurrentCoordinate = () => {
-  return new Promise((resolve, reject) => {
-    navigator.geolocation.getCurrentPosition(resolve, reject);
-  });
-};
 function ResultPage() {
   const [isMapVisible, setIsMapVisible] = useState(false);
   const [food, setFood] = useState<string>();
@@ -20,7 +15,6 @@ function ResultPage() {
   const [reLoad, setReLoad] = useState(false);
   const [foodList, setFoodList] = useState<Food[]>([]);
   const [location, setLocation] = useState<any>();
-
   useEffect(() => {
     const getFoodList = async () => {
       const response = await fetch(
@@ -29,23 +23,15 @@ function ResultPage() {
       const foodList = await response.json();
       setFoodList(foodList);
     };
-    const getLocation = async () => {
-      try {
-        getCurrentCoordinate().then((position: any) => {
-          const lat = position.coords.latitude;
-          const lng = position.coords.longitude;
-          // 위치 정보를 객체로 반환합니다.
-          setLocation({ lat, lng });
-        });
-        // const coordinate = await getCurrentCoordinate();
-        // setLocation(coordinate);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-    getLocation();
+    navigator.geolocation.getCurrentPosition((position) => {
+      getLocation(position.coords.latitude, position.coords.longitude);
+    });
     getFoodList();
   }, []);
+
+  function getLocation(latitude: any, longitude: any) {
+    setLocation({ lat: latitude, lng: longitude });
+  }
 
   useEffect(() => {
     const selectedOptions = userOptions.userOption;

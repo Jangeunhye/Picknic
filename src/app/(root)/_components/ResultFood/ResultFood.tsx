@@ -10,10 +10,11 @@ function ResultFood({ finalFood }: { finalFood: string }) {
       </div>
       <div className="relative overflow-hidden rounded-[50%]  gradient-background-image w-[300px] h-[300px]">
         <Image
-          src={`/images/foodImages/${finalFood}.jpeg`}
+          src={`/images/foodImages/${finalFood}.webp`}
           alt="food"
           layout="fill"
           objectFit="cover"
+          priority
         />
       </div>
     </div>
