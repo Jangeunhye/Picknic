@@ -1,6 +1,4 @@
-"use client";
-
-import { useOption } from "@/contexts/option.context";
+import { OptionValue, useOption } from "@/contexts/option.context";
 import { MouseEventHandler } from "react";
 
 function OptionItem({
@@ -10,14 +8,16 @@ function OptionItem({
   inputValue: string;
   title: string;
 }) {
-  const userOption = useOption();
+  const { userOption, updateUserOption } = useOption();
 
   const handleClick: MouseEventHandler<HTMLInputElement> = (e) => {
-    userOption.updateUserOption({
+    const optionValue = e.currentTarget.value;
+    updateUserOption({
       optionKey: title,
-      optionValue: e.currentTarget.value,
+      optionValue: optionValue,
     });
   };
+
   return (
     <div className="flex flex-col gap-3 w-[80px]">
       <input
@@ -31,9 +31,11 @@ function OptionItem({
       />
       <label
         htmlFor={inputValue}
-        className={` text-[20px] sm: text-sm text-center 
-          opacity-60
-        `}
+        className={`text-[20px] sm:text-sm text-center text-opacity-60 ${
+          userOption[title as keyof OptionValue] === inputValue
+            ? "text-opacity-100 font-bold"
+            : ""
+        }`}
       >
         {inputValue}
       </label>
