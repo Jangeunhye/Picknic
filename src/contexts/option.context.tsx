@@ -10,6 +10,7 @@ type OptionContextValue = {
     optionKey: string;
     optionValue: string;
   }) => void;
+  resetUserOption: () => void;
 };
 
 export type OptionValue = {
@@ -27,6 +28,7 @@ const initialValue: OptionContextValue = {
     rice: "anything",
   },
   updateUserOption: () => {},
+  resetUserOption: () => {},
 };
 const optionContext = createContext(initialValue);
 
@@ -47,9 +49,18 @@ export function OptionProvider({ children }: { children: React.ReactNode }) {
     });
   };
 
+  const resetUserOption = () => {
+    setUserOption({
+      spicy: "anything",
+      oily: "anything",
+      soup: "anything",
+      rice: "anything",
+    });
+  };
   const value: OptionContextValue = {
     userOption,
     updateUserOption,
+    resetUserOption,
   };
 
   return (
