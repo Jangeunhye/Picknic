@@ -59,12 +59,12 @@ function ResultButtons({
         <div className="text-[25px] text-[#696969] sm:text-[15px]">
           {isMapVisible ? "지도 닫기" : "지도 보기"}
         </div>
-        <div className="w-[25px] h-[35px] relative sm:w-[25px] sm:h-[20px]">
+        <div className="w-[25px] h-[35px] relative sm:w-[25px] sm:h-[33px]">
           <Image
             src="/images/지도.png"
             alt="map"
             fill
-            className="scale-75 overflow-visible object-cover"
+            className="scale-75 object-cover"
           />
         </div>
       </button>
