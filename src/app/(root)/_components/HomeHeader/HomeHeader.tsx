@@ -1,4 +1,5 @@
 import Image from "next/image";
+import mainImage from "../../../../../public/images/main-image.png";
 
 function HomeHeader() {
   return (
@@ -9,7 +10,7 @@ function HomeHeader() {
       <div className="flex -mt-2 sm:mt-5 md:mt-1">
         <div className="">
           <Image
-            src={`/images/main-image.png`}
+            src={mainImage}
             alt="main"
             width={389}
             height={528}
