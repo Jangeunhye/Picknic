@@ -5,8 +5,9 @@ import {
   soupOption,
   spicyOption,
 } from "@/constants/options";
+import { useOption } from "@/contexts/option.context";
 import { useRouter } from "next/navigation";
-import { FormEventHandler } from "react";
+import { FormEventHandler, useEffect } from "react";
 import OptionGroup from "../OptionGroup";
 
 function OptionsList() {
@@ -15,6 +16,12 @@ function OptionsList() {
     e.preventDefault();
     router.push("/result");
   };
+  const { resetUserOption } = useOption();
+
+  useEffect(() => {
+    resetUserOption();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <section className="w-full flex justify-center pt-24 md:bg-[url('/images/background.jpg')] lg:bg-[url('/images/background.jpg')] bg-white">

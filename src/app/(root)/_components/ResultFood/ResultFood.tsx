@@ -10,11 +10,11 @@ function ResultFood({ finalFood }: { finalFood: string }) {
       </div>
       <div className="relative overflow-hidden rounded-[50%] gradient-background-image w-[300px] h-[300px] sm:w-[150px] sm:h-[150px]">
         <Image
-          src={`/images/foodImages/${finalFood}.webp`}
+          src={`${process.env.NEXT_PUBLIC_URL}/images/foodImages/${finalFood}.webp`}
           alt="food"
-          sizes="100vw"
           fill
           priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
     </div>
